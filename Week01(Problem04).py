@@ -33,7 +33,7 @@ def breakingRecordsMin(scores):
         mini=scores[0]
         for i in range(1,p):
             
-            if mini<scores[i]:
+            if mini>scores[i]:
                 ct+=1
                 mini=scores[i]
                 
