@@ -13,7 +13,7 @@ def splitString(s1):
                 
                 continue
             met+=s1[i]
-        print(met)
+        print(met.rstrip())
     elif s1[2]=="C":
         met=chr(ord(s1[4])+32)
         for i in range(5,len(s1)):
@@ -22,7 +22,7 @@ def splitString(s1):
                 
                 continue
             met+=s1[i]
-        print(met)
+        print(met.rstrip())
     else:
         met=""
         for i in range(4,len(s1)):
@@ -31,7 +31,7 @@ def splitString(s1):
                 
                 continue
             met+=s1[i]
-        print(met)
+        print(met.rstrip())
                 
 def combString(c1):
     c2=""
@@ -47,7 +47,7 @@ def combString(c1):
                 continue
             
             c2+=c1[i]
-        print(c2)
+        print(c2.rstrip())
     elif c1[2]=="C":
         c2=chr(ord(c1[4])-32)
         for i in range(5,len(c1)):
@@ -59,7 +59,7 @@ def combString(c1):
                 continue
             
             c2+=c1[i]
-        print(c2)
+        print(c2.rstrip())
     else:
         
         
@@ -75,7 +75,7 @@ def combString(c1):
             
             c2+=c1[i]
             
-        print(c2+"()")
+        print(c2+"()".rstrip())
         
         
     
@@ -83,7 +83,7 @@ def combString(c1):
 if __name__=="__main__":
     while True:
         try:
-            stri=input()
+            stri=input().rstrip()
             if stri[0]=="S":
                 splitString(stri)
             elif stri[0]=="C":
