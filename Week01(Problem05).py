@@ -63,7 +63,6 @@ def combString(c1):
     else:
         
         
-        
         for i in range(4,len(c1),1):
             
             if c1[i]==" ":
@@ -83,11 +82,11 @@ def combString(c1):
 if __name__=="__main__":
     while True:
         try:
-            stri=input().rstrip()
-            if stri[0]=="S":
-                splitString(stri)
-            elif stri[0]=="C":
-                combString(stri)
+            st=input().rstrip()
+            if st[0]=="S":
+                splitString(st)
+            elif st[0]=="C":
+                combString(st)
             else:
                 break
         except (EOFError):
