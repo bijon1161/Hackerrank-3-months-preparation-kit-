@@ -21,8 +21,7 @@ def decimalToBinary(lis):
               q+="1"
           else:
               q+="0"
-  
-    print(int(q,2))
+      print(int(q,2))
       
       
 
