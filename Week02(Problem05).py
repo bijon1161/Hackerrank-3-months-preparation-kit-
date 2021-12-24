@@ -10,7 +10,7 @@ def count(p):
         lis[p[i]]+=1
     for i in lis: 
         
-        print( i,end=" ")
+        print(i,end=" ")
 
 if __name__ == '__main__':
     n=int(input())
