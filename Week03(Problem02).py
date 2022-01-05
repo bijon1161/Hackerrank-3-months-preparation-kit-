@@ -5,7 +5,9 @@ Created on Tue Jan  4 11:48:10 2022
 @author: Admin
 """
 
-def birthday(s, d, m):
+def birthday(s, dm):
+    d=dm[0]
+    m=dm[1]
     result=0
     for i in range(0,len(s)):
        if sum(s[i:m+i])==d:
@@ -13,7 +15,8 @@ def birthday(s, d, m):
     print(result) 
 
 if __name__ == '__main__':
+    n=int(input())
     s=list(map(int,input().split()))
-    d=int(input())
-    m=int(input())
-    birthday(s,d,m)
+    dm=list(map(int,input().split()))
+    
+    birthday(s,dm)
