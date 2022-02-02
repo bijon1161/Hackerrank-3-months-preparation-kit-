@@ -7,7 +7,7 @@ Created on Fri Jan  7 12:15:10 2022
 import math
 def socksMerchant(n,arr):
     s=list(set(arr))
-    print(s)
+    
     res=0
     for i in range(len(s)):
         x=(arr.count(s[i]))
